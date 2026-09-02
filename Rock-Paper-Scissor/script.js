@@ -17,7 +17,6 @@ while (true) {
     break;
   }
 
-  // Check valid options using includes()
   if (!choices.includes(playerChoice)) {
     console.log("enter a valid choice");
     continue;
@@ -38,8 +37,8 @@ while (true) {
     console.log("won");
     won++;
   } else {
-    console.log("loss");
-    losses++;
+    console.log("loss")
+    losses++
   }
 }
 
