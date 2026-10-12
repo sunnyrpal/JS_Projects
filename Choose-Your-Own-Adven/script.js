@@ -1,29 +1,97 @@
-const prompt  = require("prompt-sync")()
+const prompt  = require("prompt-sync")();
+const answer = prompt("would you like to play game y/n: ");
+if(answer.toLowerCase()==="y"){
+    const answer2= prompt("would you like to go left or go right: ");
 
-const answer = prompt("would you like to play game (y/n)")
+    if(answer2==="left"){
+        console.log("opps you go and fall of bridge you lost.");
+        
+    }else{
+     console.log("nice ! you go right and approach  a bridge");
+     const answer3 = prompt("would  you like to cross the bridge turn around the another way cross/turn: ")
 
 
-if(answer.toLowerCase('')){
-const answer2 = prompt("would you go left or right (left/right)")
 
-if(answer2 === "left"){
-    console.log("you go left and fall for a bridge ! you  lost")
+     if(answer3 === "cross"){
+        console.log("nice you cross the bridge and reach end of the game");
+        
+     }else{
+        console.log("you turn a back and trip on a log and hurt your leg . YOU LOSE");
+        
+     }
+     
+    }
+     
+
 }else{
-    console.log("nice you go right and approach a bride")
-    const answer3 = prompt("would you like to cross the  bridge  turn around another way  (turn/cross)")
-
-    if(answer3=== "cross"){
-    console.log(" you cross the bridge and reach end og the game")
-}else{
-    console.log("you turn back a long a trip and hurt your legs  you loss");
-
+    console.log("that is to bad");
+    
 
 }
-}
 
-}else{
-    console.log("bad news you lost")
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
