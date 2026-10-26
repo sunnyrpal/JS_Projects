@@ -30,13 +30,13 @@
 
 
 
-// function showAll(){
-//     Expenses.forEach(function(Expense){
-//         console.log(Expense.id , Expense.title, Expense.amount, Expense.category, Expense.date);
+function showAll(){
+    Expenses.forEach(function(Expense){
+        console.log(Expense.id , Expense.title, Expense.amount, Expense.category, Expense.date);
         
-//     })
-// }
-// showAll();
+    })
+}
+showAll();
 
 function getTotal(){
     return Expenses.reduce(function(sum,Expense){
